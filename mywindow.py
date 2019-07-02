@@ -108,9 +108,9 @@ class Ui_MyWindow(object):
         self.label = QtWidgets.QLabel(self.layoutWidget)
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
-        self.label_2 = QtWidgets.QLabel(self.layoutWidget)
+        '''self.label_2 = QtWidgets.QLabel(self.layoutWidget)
         self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
+        self.verticalLayout.addWidget(self.label_2)'''
         self.label_3 = QtWidgets.QLabel(self.layoutWidget)
         self.label_3.setObjectName("label_3")
         self.verticalLayout.addWidget(self.label_3)
@@ -121,10 +121,10 @@ class Ui_MyWindow(object):
         self.tb_SerialName_injection.setObjectName("tb_SerialName_injection")
         self.tb_SerialName_injection.setText('/dev/cu.usbserial')
         self.verticalLayout_2.addWidget(self.tb_SerialName_injection)
-        self.tb_SerialName_relay = QtWidgets.QLineEdit(self.layoutWidget)
+        '''self.tb_SerialName_relay = QtWidgets.QLineEdit(self.layoutWidget)
         self.tb_SerialName_relay.setObjectName("tb_SerialName_relay")
         self.tb_SerialName_relay.setText('/dev/cu.usbserial-14330')
-        self.verticalLayout_2.addWidget(self.tb_SerialName_relay)
+        self.verticalLayout_2.addWidget(self.tb_SerialName_relay)'''
         self.tb_SerialName_Ardunio = QtWidgets.QLineEdit(self.layoutWidget)
         self.tb_SerialName_Ardunio.setObjectName("tb_SerialName_Ardunio")
         self.tb_SerialName_Ardunio.setText('/dev/cu.usbserial-14310')
@@ -203,6 +203,6 @@ class Ui_MyWindow(object):
         self.btn_closeserial.setText(_translate("MyWindow", "关闭串口"))
         self.groupBox_2.setTitle(_translate("MyWindow", "串口名"))
         self.label.setText(_translate("MyWindow", "注射器"))
-        self.label_2.setText(_translate("MyWindow", "继电器"))
+        '''self.label_2.setText(_translate("MyWindow", "继电器"))'''
         self.label_3.setText(_translate("MyWindow", "Ardunio"))
 

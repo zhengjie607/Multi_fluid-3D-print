@@ -87,11 +87,23 @@ class serialControl_Ardunio:
     def __init__(self,portname,baudrate=9600):
         self.serial=serial.Serial(portname,baudrate)
         self.isOpen=self.serial.isOpen()
-    def openRelay(self):
-        byte=Ardunio_conmand.OpenRelay()
+    def openRelay0(self):
+        byte=Ardunio_conmand.OpenRelay0()
         self.serial.write(byte)
-    def closeRelay(self):
-        byte=Ardunio_conmand.CloseRelay()
+    def closeRelay0(self):
+        byte=Ardunio_conmand.CloseRelay0()
+        self.serial.write(byte)
+    def openRelay1(self):
+        byte=Ardunio_conmand.OpenRelay1()
+        self.serial.write(byte)
+    def closeRelay1(self):
+        byte=Ardunio_conmand.CloseRelay1()
+        self.serial.write(byte)
+    def openRelay2(self):
+        byte=Ardunio_conmand.OpenRelay2()
+        self.serial.write(byte)
+    def closeRelay2(self):
+        byte=Ardunio_conmand.CloseRelay2()
         self.serial.write(byte)
 if __name__=='__main__':
     s=serialControl_inject('/dev/cu.usbserial')
